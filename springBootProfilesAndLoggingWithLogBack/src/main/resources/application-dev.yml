@@ -1,0 +1,21 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:h2:file:~/empDB
+    driverclass: org.h2.driver
+    username: admin
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format-sql: true
+  h2:
+    console:
+      path: /h2-console
+      enabled: true

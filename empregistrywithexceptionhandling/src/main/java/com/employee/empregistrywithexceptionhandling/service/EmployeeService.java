@@ -33,6 +33,7 @@ public class EmployeeService {
                 logger.debug("EmployeeService->findEmployeeById throws EmployeeNotFoundException.");
                 throw new EmployeeNotFoundException("Error_cd_1", "Employee not found!");
             }
+            return emp;
         }
         throw new EmployeeNotFoundException("Error_cd_1", "Employee not found!");
     }
